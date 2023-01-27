@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:ital,wght@1,300&display=swap'); 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input{
+    border:1px solid #ccc;
+    height:30px;
+    padding-left:15px;
+    border-radius: 10px;
+}
+
+input:hover{
+    outline: none;
+    border:1px solid rgb(40,40,40);
+}
+
+input:focus{
+    outline: none;
+    border:1px solid rgb(40,40,40);
+}
+
+.primary-contained-btn{
+    background-color:#FFD4B2 ;
+    height:40px;
+    padding:0 20px;
+    color: white;
 }
